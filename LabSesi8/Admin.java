@@ -17,7 +17,11 @@ public class Admin extends User {
         //
     }
     
-    public Admin(String adminName, String email){
+    public Admin(String user_id){
+        super(user_id);
+    }
+    
+    public void setAdmin(String adminName, String email){
         this.admin_name = adminName;
         this.email = email;
     }
@@ -28,5 +32,9 @@ public class Admin extends User {
     
     public String getemail(){
         return email;
+    }
+    
+    public String getname(){
+        return admin_name;
     }
 }
