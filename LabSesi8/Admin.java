@@ -17,8 +17,9 @@ public class Admin extends User {
         //
     }
     
-    public Admin(String user_id){
+    public Admin(String user_id, String password){
         super(user_id);
+        super.Password(password);
     }
     
     public void setAdmin(String adminName, String email){
@@ -27,7 +28,7 @@ public class Admin extends User {
     }
     
     public void update_catalog(){
-        // ?
+        // ? Gak ngerti :V
     }
     
     public String getemail(){
